@@ -665,7 +665,7 @@ rm -f FOS-Streaming-v1-$FOS_STREAMING_CORE_VERSION.zip
 echo -e "\n-- Downloading FOS-Streaming installers on Github, Please wait, this may take several minutes, the installer will continue after this is complete!"
 # Get latest FOS-Streaming installers
 while true; do
-    wget -nv -O FOS-Streaming-installers-$FOS_STREAMING_INSTALLER_VERSION.zip https://codeload.github.com/andykimpe/FOS-Streaming-installers/zip/$FOS_STREAMING_INSTALLER_VERSION
+    wget -nv -O FOS-Streaming-installers-$FOS_STREAMING_INSTALLER_VERSION.zip https://github.com/andykimpe/FOS-Streaming-installers/archive/$FOS_STREAMING_INSTALLER_VERSION
     if [[ -f FOS-Streaming-installers-$FOS_STREAMING_INSTALLER_VERSION.zip ]]; then
         break;
     else
